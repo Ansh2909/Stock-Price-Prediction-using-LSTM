@@ -77,7 +77,7 @@ if predict_button:
 
             model.compile(loss='mean_squared_error',optimizer='adam')
             st.write("Training the model... This might take a few minutes.")
-            model.fit(x_train,y_train,validation_data=(x_test,y_test),epochs=2,batch_size=64,verbose=1)
+            model.fit(x_train,y_train,validation_data=(x_test,y_test),epochs=50,batch_size=64,verbose=1)
             st.success("Model training completed!")
 
 
