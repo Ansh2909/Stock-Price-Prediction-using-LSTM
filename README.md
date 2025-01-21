@@ -30,11 +30,14 @@ This project requires the following libraries:
 This project uses an LSTM network to predict future stock prices. The architecture of the model consists of:
 
 **LSTM layers**: These layers are used to capture the temporal dependencies in stock price data.
+
 **Dropout layers**: Added to reduce overfitting by randomly setting a fraction of input units to zero during training.
+
 **Dense layer**: The final layer, which outputs the predicted stock price for the next day.
 
 ## Model Training
 **Training Data**: The model is trained on 75% of the data (historical stock prices).
+
 **Test Data**: The remaining 25% is used to validate the model.
 
 ## Conclusion
